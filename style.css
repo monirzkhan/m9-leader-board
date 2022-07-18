@@ -3,11 +3,12 @@ body {
     margin: 0;
     width: 100%;
     font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
 
 }
 
 /* navigation-bar style  */
-.nav-bg{
+.nav-bg {
     background-color: #562EFF;
     width: 100%;
     height: 94px;
@@ -15,6 +16,7 @@ body {
     justify-content: center;
 
 }
+
 .navigation-bar {
     background-color: #562EFF;
     width: 870px;
@@ -23,8 +25,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    
+
+
 }
 
 .logo {
@@ -55,5 +57,107 @@ body {
     color: #FFFFFF;
     font-size: 16px;
     padding: 0;
-    font-weight: 300;
+    font-weight: normal;
+}
+
+/* Top Player Style  */
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.header-title h3 {
+    font-size: 24px;
+    color: #562EFF;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+.player-and-blogs {
+    background-color: #FFFFFF;
+    width: 870px;
+    height: 680px;
+    border-radius: 5px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    padding-left: 30px;
+    padding-top: 20px;
+
+
+}
+
+.player {
+    display: flex;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+    margin-right: 10px;
+}
+
+.player a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin: 30px;
+}
+
+/* Blogs Style  */
+.top-blog h3 {
+    font-size: 24px;
+    color: #562EFF;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 20px;
+
+}
+
+.blog {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.blog img {
+    width: 177px;
+    height: 117px;
+    margin-left: 30px;
+}
+
+.blog h4 {
+    font-size: 20px;
+    margin: 0px;
+}
+
+.blog p {
+    color: #9F9F9F;
+    font-size: 16px;
+}
+
+.blog .author a{
+    color: #562EFF;
+    text-decoration: none;
+}
+/* Courses style  */
+.courses {
+    background-color: #FFFFFF;
+    width: 870px;
+    height: 680px;
+    border-radius: 5px;
 }
