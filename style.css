@@ -135,6 +135,7 @@ hr {
     display: flex;
     gap: 10px;
     align-items: center;
+    
 }
 
 .blog img {
@@ -257,41 +258,56 @@ hr {
         height: 100%;
     }
 
-    .players,.blogs {
+    .players,
+    .blogs {
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
     }
 
-.player {
-    flex-direction: column;
-    align-items: center;
-}
-
-.courses {
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 20px;
-}
-
-.latest-course {
-    width: 100%;
-    height: 100%;
-}
-}
-
-@media only screen and (min-width:689px) and (max-width:991px) {
-    .players{
-        grid-template-columns: repeat(2,1fr);
+    .player {
+        flex-direction: column;
+        align-items: center;
     }
+    .blog-text{
+        padding-left: 10px;
+    }
+
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .latest-course {
+        width: 100%;
+        height: 100%;
+    }
+
+    .menu-bar ul {
+        gap:10px; 
+    }
+    .navigation-bar {
+        margin: 0 10px;
+    }
+}
+
+
+/* Tab Devices */
+@media only screen and (min-width:689px) and (max-width:991px) {
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .player-and-blogs {
 
         width: 100%;
         height: 100%;
     }
+
     .latest-course {
         width: 100%;
         height: 100%;
         margin: 0;
-        
+
     }
-    
+
 }
